@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RadioThermostat
+namespace RadioThermostat.DataTransferObjects
 {
     public class SystemInformation
     {
@@ -9,10 +9,4 @@ namespace RadioThermostat
         public string fw_version { get; set; }
         public string wlan_fw_version { get; set; }
     }
-
-    public class Model
-    {
-        public string model { get; set; }
-    }
-    
 }

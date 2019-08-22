@@ -8,7 +8,10 @@ namespace RadioThermostat
         static void Main(string[] args)
         {
             Console.WriteLine("RadioThermostat");
-            Task.Run(() => RadioThermostat.RunAsync().GetAwaiter().GetResult());
+            RadioThermostat.uri = new Uri("http://192.168.88.100");
+            Task.Run(() => RadioThermostat.GetModel().GetAwaiter().GetResult());
+            Task.Run(() => RadioThermostat.GetSystemInformation().GetAwaiter().GetResult());
+
             Console.ReadKey();
         }
     }
