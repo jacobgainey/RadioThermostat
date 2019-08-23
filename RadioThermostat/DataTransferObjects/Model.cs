@@ -1,6 +1,6 @@
 ﻿namespace RadioThermostat.DataTransferObjects
 {
-    public class Model
+    public struct Model
     {
         public string model { get; set; }
     }

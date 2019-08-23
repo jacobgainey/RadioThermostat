@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace RadioThermostat.DataTransferObjects
+﻿namespace RadioThermostat.DataTransferObjects
 {
-    public class SystemInformation
+    public struct Info
     {
-        public string uuid { get; set; }
+        public string UUID { get; set; }
         public int api_version { get; set; }
         public string fw_version { get; set; }
         public string wlan_fw_version { get; set; }
